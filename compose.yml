@@ -1,0 +1,14 @@
+services:
+  one:
+    build:
+      context: ./one
+      dockerfile: Dockerfile
+    env_file: env/one.env
+    restart: unless-stopped
+
+  # db:
+  #   env_file: env/db.env
+  #   image: pgvector/pgvector
+  #   restart: unless-stopped
+  #   volumes:
+  #     - ./data/db:/var/lib/postgresql/data
