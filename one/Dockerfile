@@ -19,5 +19,3 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --frozen --no-dev
 
 RUN uv run playwright install --with-deps chromium
-
-# EXPOSE 8080
